@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+@font-face {
+  font-family: myFont;
+  src: url(LexendDeca-Regular.ttf);
+}
+
+@font-face {
+  font-family: mysecondeFont;
+  src: url(Big_Shoulders_Display/BigShouldersDisplay-Bold.ttf);
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.col1{
+    background-color: hsl(31, 77%, 52%) ;
+
+}
+.col2{
+    background-color:  hsl(184, 100%, 22%) 
+}
+.col3{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.container p{
+   color:  hsla(0, 0%, 100%, 0.75);
+   text-align: left;
+   margin:10%;
+   font-size: 16px;
+   font-family: myFont;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+.col1,.col2,.col3{
+    height: 500px;
+
+}
+h1{
+    color:  hsla(0, 0%, 100%, 0.75);
+    margin:10%;
+    font-size :30px;
+    font-family:mysecondeFont;
+}
+
+img,button {
+    margin: 10%
+}
+.container {
+    margin: 10%;
+}
+
+.button1,.button2,.button3{
+    background-color: hsl(0, 0%, 95%);
+    border-radius:16%;
+    padding-top: 18px;
+    padding-right: 36px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    border: none;
+}
+.button1{
+    color: hsl(31, 77%, 52%) ;
+}
+.button2{
+    color:  hsl(184, 100%, 22%);
+}
+.button3{ color:hsl(179, 100%, 13%)}
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+    
+    grid-template-columns: 1fr;}
+    
+}
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="col1">
+            <img src="images/icon-sedans.svg" alt="">
+        <h1>
+           
+          SEDANS
+        </h1>
+        <p>
+         Choose a sedan for its affordability and  excellent fuel economy.ideal for crusing 
+         in the city or on your next road trip
+        </p>
+        <button class="button1">Learn More</button>
+    </div>
+        <div class="col2"> 
+            <img src="images/icon-suvs.svg" alt="">
+            <h1>
+                SUVS
+            </h1>
+            <p>
+              Take an SUV for its spacious interior ,power and versatility.perfect for your 
+              next family vacation and off-road adventures
+            </p>
+            <button class="button2">Learn More</button>
+        </div>
+        <div class="col3">
+            <img src="images/icon-luxury.svg" alt="">
+            <h1>
+               LUXURY
+            </h1>
+            <P>
+              Cruise in the best car brands without the bloated prices.Enjoy the  enhanced 
+              comfort of a  luxury and arrive in style
+            </P>
+            <button class="button3">Learn More</button>
+        </div>
+    </div>
+</body>
+</html>
