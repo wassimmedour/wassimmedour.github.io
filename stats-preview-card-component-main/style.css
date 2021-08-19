@@ -1,0 +1,187 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+.fotter ul,.head{
+  display: flex;
+}
+.fotter ul{
+  justify-content: space-between;
+
+}
+
+.fotter ul li{
+  text-transform: uppercase;
+}
+
+.first{
+  background-color: hsl(244, 38%, 16%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+}
+.first strong{
+  color: hsl(277, 64%, 61%)
+}
+.head ,h1,p ,.fotter ul  {
+
+margin-top: 10%;
+margin-right: 10%;
+margin-bottom: 10%;
+margin-left: 10%;
+}
+
+.first p{
+  color:hsla(0, 0%, 100%, 0.75);
+  font-family: 'Red Hat Display', sans-serif;
+
+}
+
+h1{
+  color:hsl(0, 0%, 100%);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 40px;
+
+}
+
+.fotter strong{
+ 
+ color:hsla(0, 0%, 100%, 0.75);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 15px;
+}
+
+.fotter ul li {
+  color: hsl(0, 0%, 100%);
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 20px;
+}
+.image{
+  
+  background:   url("images/image-header-desktop.jpg")  no-repeat;
+  background-size: cover;
+  width:100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  opacity: 0.8;
+}
+.couleur{
+  width:100%;
+  background-color:hsl(277, 64%, 61%) ;
+  opacity: .7;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media only screen and (max-width: 640px) {
+  .head {
+    flex-direction: column;
+    position: static;
+    }
+    .image{
+      width:100%;
+      height: 221px;
+      background:url("images/image-header-mobile.jpg") no-repeat;
+      background-size: cover;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      
+      order:1;
+    }
+    .couleur{
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+   .first{
+     order:2;
+     text-align: center;
+     
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+   }
+    .first h1 {
+      font-size: 29px;
+    }
+    .first p {
+      font-size: 15px;
+    }
+
+   .fotter ul{
+    flex-direction: column;
+    align-items: center;
+
+  }
+.fotter ul li { text-align: center;}
+
+}
+
+
+
+body{
+ 
+ background-color:  hsl(233, 47%, 7%)
+}
+.couleur{
+  width: 100%;
+  height: 100%;
+  background: hsl(277, 64%, 61%);
+  opacity: .6;
+  position: relative;
+}
+.head{
+  border-radius: 5%;
+  position: fixed;
+}
+
+
